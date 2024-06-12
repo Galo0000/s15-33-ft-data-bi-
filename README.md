@@ -104,6 +104,31 @@ Disponibilizamos el diccionario de datos de nuestra data [aquí]()
 ## Análisis Exploratorio de Datos (EDA)
 ## Dashboard
 ## Modelo
+### Descripción
+
+Este repositorio contiene el desarrollo de un modelo de machine learning diseñado para predecir los resultados de partidos de fútbol utilizando datos históricos de rendimiento deportivo. El modelo se ha desarrollado utilizando un proceso de Extracción, Transformación y Carga (ETL) de datos para limpiar y preparar los datos, seguido de un Análisis Exploratorio de Datos (EDA) para comprender mejor la naturaleza de los datos y finalmente, el entrenamiento de varios algoritmos de clasificación para realizar predicciones precisas.
+
+### Contenido del Repositorio
+
+- **ETL y EDA**: Se realiza un proceso de ETL para limpiar y preparar los datos provenientes de nueve bases de datos relacionales obtenidas desde Kaggle. Luego, se lleva a cabo un análisis exploratorio de datos para comprender las características de los datos y tratar con valores atípicos.
+  
+- **Entrenamiento de Modelos**: Se utilizan varios algoritmos de clasificación, incluyendo RandomForestClassifier, LogisticRegression, DecisionTreeClassifier, KNeighborsClassifier y GradientBoostingClassifier para entrenar y evaluar el modelo. Se divide el conjunto de datos en entrenamiento y prueba, y se evalúa el rendimiento de cada modelo utilizando métricas como precisión, recall y f1-score.
+
+### Resultados del Modelo
+
+- **RandomForestClassifier**: El modelo alcanzó una precisión del 99.18% en el conjunto de prueba.
+  
+- **LogisticRegression**: El modelo de regresión logística logró una precisión del 100% en el conjunto de prueba.
+
+- **DecisionTreeClassifier**: El modelo de árbol de decisiones alcanzó una precisión del 100% en el conjunto de prueba.
+
+- **KNeighborsClassifier**: El modelo de vecinos más cercanos obtuvo una precisión del 35.96% en el conjunto de prueba.
+
+- **GradientBoostingClassifier**: El modelo de aumento de gradiente logró una precisión del 100% en el conjunto de prueba.
+
+### Uso del Repositorio
+
+Este repositorio puede ser utilizado para entender el proceso de desarrollo de un modelo de machine learning para predecir resultados de partidos de fútbol. Se proporciona el código fuente en Python utilizando bibliotecas como Pandas, Polars, Scikit-learn, Seaborn y Matplotlib. Los datos utilizados en este proyecto pueden ser reemplazados por conjuntos de datos personalizados para adaptarse a diferentes contextos o aplicaciones.
 ## Deploy
 # Tecnologias y Herramientas
 # Equipo
