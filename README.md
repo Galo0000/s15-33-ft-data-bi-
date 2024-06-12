@@ -101,6 +101,33 @@ Disponibilizamos el diccionario de datos de nuestra data [aquí]()
 
 # Desarrollo
 ## ETL
+### Propósito
+El objetivo de este proyecto fue crear una base de datos lo más normalizada posible para servir como fundamento del proyecto. Este proceso ETL asegura que los datos estén limpios, estructurados y listos para su análisis y uso en diversas aplicaciones.
+
+### Extracción (Extract)
+Para la extracción de datos, utilizamos un ejemplo del repositorio [transfermarkt-datasets](https://github.com/dcaribou/transfermarkt-datasets/tree/master). Este repositorio proporciona archivos JSON que contienen los datos necesarios. Utilizamos scripts en Python junto con las librerías Pandas y NumPy para cargar estos archivos JSON y comenzar el proceso de transformación.
+
+### Transformación (Transform)
+Durante la transformación, aplicamos diversas operaciones para limpiar y normalizar los datos:
+- **Limpieza de datos:** Eliminación de valores nulos y duplicados.
+- **Normalización:** Ajuste de formatos de fecha y unificación de estructuras de datos.
+- **Agregación:** Consolidación de datos por categorías relevantes.
+Las transformaciones se realizaron utilizando las librerías Pandas y NumPy en Python.
+
+### Carga (Load)
+Los datos transformados se cargaron en una instancia de AWS RDS. Esto permite que la base de datos esté disponible para su uso en Power BI y otras solicitudes de análisis. Utilizamos scripts en Python para automatizar el proceso de carga de datos en AWS RDS.
+
+### Arquitectura General
+El proceso ETL se orquestó utilizando scripts en Python para la extracción, transformación y carga de datos.
+
+### Configuración y Ejecución
+Para ejecutar el proceso ETL, sigue estos pasos:
+1. Clona el repositorio: `git clone [URL del repositorio]`
+2. Instala las dependencias: `pip install -r requirements.txt`
+3. Configura las variables de entorno necesarias: [detalles de configuración]
+4. Ejecuta el pipeline: `python run_etl.py`
+
+
 ## Análisis Exploratorio de Datos (EDA)
 ## Dashboard
 ## Modelo
